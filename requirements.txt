@@ -1,0 +1,4 @@
+json
+re
+beautifulsoup4
+pandas
