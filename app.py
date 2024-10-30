@@ -65,8 +65,8 @@ if uploaded_file is not None:
                 # Display pore activity plot
                 st.title("Pore occupancy")
                 st.write(f"**Maximum pore occupancy**: {max_pore_occupancy:.2f} %")
-                st.caption("Normalised sequencing and available pores over time.")
-                st.caption("'Sequencing' bars represent the pore occupancy. Hover over 'Sequencing' bars to display pore occupancy values.")
+                st.caption("Pore occupancy = sequencing pores / (sequencing + available pores) * 100")
+                st.caption("Plot shows normalised sequencing and available pores over time. Hover over 'Sequencing' bars to display pore occupancy values.")
                 activity_plot(sequencing_norm, available_norm)
 
             else:
