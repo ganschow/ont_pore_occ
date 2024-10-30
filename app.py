@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 # Sidebar file upload
-st.sidebar.title("Upload HTML run report")
+st.sidebar.title("Load HTML run report")
 uploaded_file = st.sidebar.file_uploader("Choose file", type="html")
 
 def activity_plot(sequencing_norm, available_norm):
@@ -76,4 +76,4 @@ if uploaded_file is not None:
     else:
         st.write("No <script> tag found in the HTML file.")
 else:
-    st.write("Please upload an HTML run report using the left sidebar.")
+    st.write("Please load an HTML run report using the left sidebar.")
