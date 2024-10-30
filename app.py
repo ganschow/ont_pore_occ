@@ -76,4 +76,4 @@ if uploaded_file is not None:
     else:
         st.write("No <script> tag found in the HTML file.")
 else:
-    st.write("Please upload an HTML file.")
+    st.write("Please upload an HTML run report using the left sidebar.")
